@@ -1,6 +1,5 @@
 //Buble shorting//
 #include<stdio.h>
-#include<conio.h>
 void bsort(int ar[],int n)
 {
 	int temp,i,j;
@@ -21,12 +20,10 @@ void bsort(int ar[],int n)
 	{
 		printf("%d ",ar[i]);
 	}printf("\n");
-	getch();
 }
 void main()
 {
 	int a,b,list[100];
-	clrscr();
 	printf("***Buble Shorting***\n");
 	printf("How many data you want:");
 	scanf("%d",&b);
