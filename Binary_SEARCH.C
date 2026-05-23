@@ -1,6 +1,5 @@
 //Binary Search//
 #include<stdio.h>
-#include<conio.h>
 void bsearch(int ar[],int n)
 {
 	int mid,left,right,count=0,x;
@@ -26,17 +25,17 @@ void bsearch(int ar[],int n)
 	}
 	if(count == 0)
 	{
-		printf("%d is not found in this Araay...\n");
+		printf("%d is not found in this Araay...\n",n);
 	}
 	else{
 		printf("%d found in %d index of this Araay...\n",x,count);
 	}
-	getch();
+	
 }
 void main()
 {
 	int k,end,list[100];
-	clrscr();
+	
 	printf("How many data you want:");
 	scanf("%d",&end);
 	printf("Enter %d data of this array in shorted way:\n",end);
