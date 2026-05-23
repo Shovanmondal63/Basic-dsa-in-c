@@ -1,7 +1,8 @@
 //Symple Linklist//
 #include<stdio.h>
-#include<alloc.h>
-#include<conio.h>
+#include<stdlib.h>
+#include<ctype.h>
+
 struct list
 {
 	int data;
@@ -12,7 +13,8 @@ void main()
 {
 	LI*temp,*current,*start;
 	start=NULL;
-	clrscr();
+    char ch;
+	
 	do{
 		temp=(LI*)malloc(sizeof(LI));
 		printf("Give a value:");
@@ -22,12 +24,13 @@ void main()
 			start=current=temp;
 		}
 		else{
-			current->next=temp;
+			current->add=temp;
 			current=temp;
 		}
 		fflush(stdin);
 		printf("Wnt to continue(y/n):");
-	}while(toupper(getchar()) != 'N');
+        scanf(" %c",&ch);
+	} while(toupper(ch) != 'N');
 	current->add=NULL;
 	printf("All data of Linklist is: ");
 	while(start != NULL)
@@ -35,5 +38,5 @@ void main()
 		printf("%d ",start->data);
 		start=start->add;
 	}printf("\n");
-	getch();
+	
 }
