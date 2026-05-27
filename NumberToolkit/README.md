@@ -97,13 +97,7 @@ You can improve this project by adding:
 
 ## Author
 
-Created by Akash Aguan
-
----
-
-## GitHub Repository Name Suggestion
-
-`c-number-toolkit`
+Created by Shovan Mondal
 
 ---
 
